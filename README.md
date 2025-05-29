@@ -3,9 +3,10 @@
 Este é um sistema de gerenciamento de pedidos desenvolvido com **Spring Boot**, utilizando os padrões de projeto **Strategy** e **State** para controle de frete e fluxo de estados do pedido, respectivamente.
 
 Integrantes do grupo:
+
 Leonardo Henrique Costa
 Ana Carolina Dumont Franco
-Fred
+Frederico Santos Guimarães
 
 
 ## 📌 Funcionalidades
@@ -30,12 +31,12 @@ Fred
 ## 📦 Padrões Utilizados
 
 ### Strategy
-Utilizado para cálculo de frete:
+Utilizado para cálculo de frete assim facilitando novas implementações de formas de frete:
 - FreteAviao
 - FreteCaminhao
 
 ### State
-Utilizado para transições de estado de pedido:
+Utilizado para transições de estado de pedido deixando mais fácil a implementação de novos estados para os pedidos:
 - AguardandoPagamentoState
 - PagoState
 - EnviadoState

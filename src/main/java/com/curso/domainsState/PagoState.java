@@ -3,9 +3,6 @@ package com.curso.domainsState;
 import com.curso.domains.Pedido;
 import com.curso.services.exceptions.OperacaoNaoPermitidaException;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 public class PagoState implements State {
 
     private Pedido pedido;

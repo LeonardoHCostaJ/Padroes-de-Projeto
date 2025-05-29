@@ -33,7 +33,7 @@ public class PedidoService {
     }
 
     public Pedido create(PedidoDTO dto) {
-        dto.setIdPedido(null); // garantir novo pedido
+        dto.setIdPedido(null);
         return montarEAtualizarPedido(dto);
     }
 

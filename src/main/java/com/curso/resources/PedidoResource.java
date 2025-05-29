@@ -45,9 +45,9 @@ public class PedidoResource {
         return ResponseEntity.ok(new PedidoDTO(atualizado));
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> delete(@PathVariable UUID id) {
-        pedidoService.delete(id);
+    @DeleteMapping("/{idPedido}")
+    public ResponseEntity<Void> delete(@PathVariable UUID idPedido) {
+        pedidoService.delete(idPedido);
         return ResponseEntity.noContent().build();
     }
 

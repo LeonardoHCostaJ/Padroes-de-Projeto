@@ -1,11 +1,6 @@
 package com.curso.services;
 
-import com.curso.domains.Pedido;
 import com.curso.domains.dtos.PedidoDTO;
-import com.curso.domainsState.*;
-import com.curso.freteStrategy.Frete;
-import com.curso.freteStrategy.FreteAviao;
-import com.curso.freteStrategy.FreteCaminhao;
 import com.curso.repositories.PedidoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
