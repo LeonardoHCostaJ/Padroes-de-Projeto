@@ -51,12 +51,6 @@ public class Pedido {
     @NotNull
     private String estadoAtual;
 
-    @PostLoad
-    private void initTransientFields() {
-        this.frete = createFreteFromString(this.tipoFrete);
-        this.estado = createStateFromString(this.estadoAtual);
-    }
-
     public void sucessoAoPagar() {
         if (estado == null) this.estado = createStateFromString(this.estadoAtual);
         estado.sucessoAoPagar();
